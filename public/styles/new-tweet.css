@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  background-color: gray;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Bungee', cursive;
+  width: 100%;
+  padding: 50px;
+  padding-bottom: 100px;
+}
+
+.new-tweet button {
+  background-color: goldenrod; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.new-tweet h2 {
+  color: black;
+}
+
+.new-tweet output {
+  color: black;
+}
+
+.new-tweet textarea {
+  /* display: flex; */
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50;
+  
+  border-bottom: 5px solid black;
+  background-color: transparent;
+
+  font-weight: bold;
+  text-align: center;
+
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  width: 300px;
+
+
+
+
+}
+
