@@ -11,7 +11,7 @@
   
   justify-content: space-evenly;
   
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 0px;
 }
 
@@ -22,7 +22,9 @@
 }
 
 
-
+.tweetsContainer {
+  width: 80%;
+}
 
 .usernameAvatar {
   display: flex;
