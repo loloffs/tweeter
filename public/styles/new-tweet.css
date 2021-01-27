@@ -30,7 +30,7 @@
 }
 
 .new-tweet textarea {
-  /* display: flex; */
+  display: flex;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50;
@@ -50,9 +50,24 @@
   width: 300px;
 }
 
+.handle {
+  display: flex;
+  align-self: flex-start;
+  order: 4;
+}
 
 .new-tweet div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.username {
+  display: flex;
+  order: 2;
+}
+
+/* .tweet {
+  display: flex;
+  flex-direction: row;
+} */

@@ -1,0 +1,101 @@
+.tweetBox {
+  display: flex;
+
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  background-color: gray;
+
+  border: 4px solid #000;
+
+  
+  justify-content: space-evenly;
+  
+  margin-bottom: 500px;
+  margin-top: 0px;
+}
+
+.tweetBox:hover {
+  box-shadow: 5px;
+  background-color: black;
+  /* color: red; */
+}
+
+
+
+
+.usernameAvatar {
+  display: flex;
+  align-items: flex-start;
+}
+.tweetHeader {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 0 20px;
+
+}
+.avatar {
+  display: flex;
+  margin-right: 20px;
+  order: 1;
+}
+.tweetContent {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  border-bottom-width: .2em;
+  border-bottom-style: solid;
+  border-color: goldenrod;
+  margin-bottom: 4px;
+}
+.words {
+  color: white;
+  margin-bottom: 3px;
+}
+.username {
+  color: goldenrod;
+  margin: 0px;
+}
+.bottomTweetBox {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.handle {
+  color: goldenrod;
+  margin: 0px;
+}
+.timeStamp {
+  color: goldenrod;
+  width: 100px;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.bodyClass {
+  background-color: gray;
+}
+.reactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.retweet {
+  color: goldenrod;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+.flag {
+  color: goldenrod;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.heart {
+  display: flex;
+  margin: 0px;
+  color: goldenrod;
+}

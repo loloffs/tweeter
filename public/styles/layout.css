@@ -21,8 +21,9 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   align-items: center;  
-  justify-content: column;
+  /* justify-content: column; */
   flex-flow: column;
+  padding-top: 120px;
 }
 
 
@@ -38,3 +39,5 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ /* margin-top: 30px; */
