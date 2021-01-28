@@ -7,31 +7,31 @@
 
 $(document).ready(function () {
 
-  const tweetExample = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@loloffs"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd"
-      },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ];
+  // const tweetExample = [
+  //   {
+  //     "user": {
+  //       "name": "Newton",
+  //       "avatars": "https://i.imgur.com/73hZDYK.png"
+  //       ,
+  //       "handle": "@loloffs"
+  //     },
+  //     "content": {
+  //       "text": "If I have seen further it is by standing on the shoulders of giants"
+  //     },
+  //     "created_at": 1461116232227
+  //   },
+  //   {
+  //     "user": {
+  //       "name": "Descartes",
+  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
+  //       "handle": "@rd"
+  //     },
+  //     "content": {
+  //       "text": "Je pense , donc je suis"
+  //     },
+  //     "created_at": 1461113959088
+  //   }
+  // ];
 
 
 
@@ -77,7 +77,7 @@ $(document).ready(function () {
     }
   }
 
-  renderTweets(tweetExample);
+  // renderTweets(tweetExample);
 
 
 
@@ -87,6 +87,14 @@ $(document).ready(function () {
 
   $form.on('submit', function (event) {
     event.preventDefault();
+    
+    if (event.target.elements[0].value.length === 0) {
+      return alert("Please enter a tweet before submitting!");
+    }
+    if (event.target.elements[0].value.length > 140) {
+      return alert("Your tweet is too long! Please make it 140 character or less.");
+    }
+    
     console.log(event.target.elements[0].value);
 
     console.log($(this).serialize());
@@ -101,14 +109,6 @@ $(document).ready(function () {
 
   });
 
-  $.ajax({
-    url: 'ajaxfile.php',
-    type: 'post',
-    data: {name:'yogesh',salary: 35000,email: 'yogesh@makitweb.com'},
-    success: function(response){
- 
-    }
- });
   
  const loadTweets = function() {
 
@@ -116,10 +116,16 @@ $(document).ready(function () {
 
     url: "/tweets",
     method: 'GET',
-    data: $(this).parseJSON()
+    success: function(result) {
+
+      console.log(result);
+      $("#divSettings").html(result);
+      renderTweets(result);
+
+    }
   
-  }).then(console.log("Heyyyyy"));
-  
+  })
+
  };
 
  loadTweets();
