@@ -8,6 +8,8 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
+
 }
 
 /*
@@ -33,9 +35,6 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap; */
 
-  
- 
-
 
 }
 
@@ -46,6 +45,28 @@ main {
   background-color: #f4f1ec;
   align-items: center;
 }
+
+
+
+@media (max-width: 800px) {
+  .body .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+} 
+
+/*
+@media (min-width: 600px) {
+  .tweet-box {
+    width: 25%;
+  }
+
+  .tweetsContainer {
+    width: 75%;
+  }
+
+} */
 
 
 

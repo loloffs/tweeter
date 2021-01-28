@@ -103,10 +103,30 @@
 
 
 
-@media (min-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .container .new-tweet {
-    width: 800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 } 
+
+@media (min-width: 600px) {
+  .tweet-box {
+    width: 25%;
+  }
+
+  .tweetsContainer {
+    width: 75%;
+  }
+
+} */
+
+
+
+/* .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+} */
