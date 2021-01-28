@@ -67,6 +67,22 @@
   order: 2;
 }
 
+
+#alertLong {
+  text-decoration: underline red;
+  color: red;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#alertNoText {
+  text-decoration: underline red;
+  color: red;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 /* .tweet {
   display: flex;
   flex-direction: row;

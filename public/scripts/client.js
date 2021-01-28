@@ -4,9 +4,13 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 $(document).ready(function () {
-
+  
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
   // const tweetExample = [
   //   {
   //     "user": {
@@ -50,7 +54,7 @@ $(document).ready(function () {
     <h5 class="handle">${tweetObj.user.handle}</h5>
     </header>
       <div class="tweetContent">
-    <h5 class="words">${tweetObj.content.text}</h3>
+    <h5 class="words">${escape(tweetObj.content.text)}</h3>
         </div>
       <footer class="bottomTweetBox">
     <h6 class="timeStamp">${tweetObj.created_at}</h6>
@@ -89,10 +93,16 @@ $(document).ready(function () {
     event.preventDefault();
     
     if (event.target.elements[0].value.length === 0) {
-      return alert("Please enter a tweet before submitting!");
+      $("#alertNoText").slideDown(400, () => {
+        $("#alertNoText").slideUp(5000);
+      });
+      return;
     }
     if (event.target.elements[0].value.length > 140) {
-      return alert("Your tweet is too long! Please make it 140 character or less.");
+      $("#alertLong").slideDown(400, () => {
+      $("#alertLong").slideUp(5000);
+      });      
+      return;
     }
     
     console.log(event.target.elements[0].value);
@@ -103,10 +113,10 @@ $(document).ready(function () {
       
       url: "/tweets",
       method: 'POST',
-      data: $(this).serialize()
-  
-    }).then(console.log("Heyyyyy"));
-
+      data: $(this).serialize(), 
+    }).then(() => {
+      loadTweets();
+    })
   });
 
   
@@ -117,9 +127,6 @@ $(document).ready(function () {
     url: "/tweets",
     method: 'GET',
     success: function(result) {
-
-      console.log(result);
-      $("#divSettings").html(result);
       renderTweets(result);
 
     }
@@ -129,6 +136,15 @@ $(document).ready(function () {
  };
 
  loadTweets();
+
+
+
+
+
+
+
+
+
 
 
 });
