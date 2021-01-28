@@ -1,19 +1,18 @@
 .container {
   display: flex;
-  background-color: gray;
+  background-color: #f4f1ec;
   justify-content: center;
   align-items: flex-start;
   font-family: 'Bungee', cursive;
-  width: 100%;
-  padding: 50px;
-  padding-bottom: 100px;
+  width: 80%;
+  padding: 1em;
 }
 
 .new-tweet button {
-  background-color: goldenrod; /* Green */
+  background-color: goldenrod; 
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: .8em 1.2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -23,6 +22,7 @@
 .new-tweet h2 {
   color: black;
   font-size: 24px;
+  text-align: center;
 }
 
 .new-tweet output {
@@ -35,7 +35,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50;
   
-  border-bottom: 5px solid black;
+  border-bottom: 0.2em solid black;
+  border-width: 0.2em;
   background-color: transparent;
 
   font-weight: bold;
@@ -47,7 +48,12 @@
   border-left: none;
   border-right: none;
 
-  width: 300px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  width: 80%;
+
+  resize: none;
 }
 
 .handle {
@@ -82,8 +88,25 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.new-tweet {
+  border: 0.2em solid #000;
+  width: 100%;
+}
 
-/* .tweet {
-  display: flex;
-  flex-direction: row;
-} */
+.counter {
+  margin: 1em;
+}
+
+#tweetButton {
+  margin: 1em;
+}
+
+
+
+@media (min-width: 800px) {
+  .container .new-tweet {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 

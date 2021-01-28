@@ -19,11 +19,22 @@
   box-shadow: 5px;
   background-color: black;
   /* color: red; */
+
+
+
+  
+
+
+
 }
 
 
 .tweetsContainer {
   width: 80%;
+
+
+  /* here */
+
 }
 
 .usernameAvatar {
@@ -85,19 +96,20 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+
 .retweet {
   color: goldenrod;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 2px;
+  margin-left: .2em;
+  margin-right: .2em;
+  margin-bottom: .2em;
 }
 .flag {
   color: goldenrod;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: .2em;
+  margin-bottom: .2em;
 }
 .heart {
   display: flex;
-  margin: 0px;
+  margin: 0em;
   color: goldenrod;
 }

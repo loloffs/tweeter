@@ -8,5 +8,14 @@ nav {
   padding: 1.5em;
   position: fixed;
   top: 0;
+  text-align: center;
+  text-align-last: justify;
+}
+
+#writeANewTweet {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: goldenrod;
+  padding: .1em;
 }
 

@@ -11,6 +11,14 @@
 
   background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");;
 
+
+  /* maybe? */
+  /* display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; */
+
+
 }
 
 

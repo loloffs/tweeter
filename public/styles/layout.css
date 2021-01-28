@@ -23,7 +23,20 @@ body {
   align-items: center;  
   /* justify-content: column; */
   flex-flow: column;
-  padding-top: 120px;
+  padding-top: 5em;
+
+
+  /* maybe? */
+
+  /* display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; */
+
+  
+ 
+
+
 }
 
 
