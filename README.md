@@ -7,12 +7,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
  
+ ### Main Screen
 !["Screenshot of tweeter main"](https://github.com/loloffs/tweeter/blob/master/public/images/TweeterMain.png?raw=true)
 
+### Compose Tweet
 !["Screenshot of tweeter main"](https://github.com/loloffs/tweeter/blob/master/public/images/TweeterCompose.png?raw=true)
 
+### Hover over Tweet
 !["Screenshot of tweeter main"](https://github.com/loloffs/tweeter/blob/master/public/images/TweeterHover.png?raw=true)
 
+### Display Error Message
 !["Screenshot of tweeter main"](https://github.com/loloffs/tweeter/blob/master/public/images/TweeterError.png?raw=true)
 
 
