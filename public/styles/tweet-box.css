@@ -1,42 +1,21 @@
 .tweetBox {
   display: flex;
-
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 125%;
   background-color: gray;
-
   border: 4px solid #000;
-
-  
   justify-content: space-evenly;
-  
   margin-bottom: 5px;
   margin-top: 0px;
 }
-
 .tweetBox:hover {
   box-shadow: 5px;
   background-color: black;
-  /* color: red; */
-
-
-
-  
-
-
-
 }
-
-
 .tweetsContainer {
   width: 80%;
-
-
-  /* here */
-
 }
-
 .usernameAvatar {
   display: flex;
   align-items: flex-start;
@@ -96,7 +75,6 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-
 .retweet {
   color: goldenrod;
   margin-left: .2em;

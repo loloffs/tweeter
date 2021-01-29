@@ -8,8 +8,6 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-
-
 }
 
 /*
@@ -23,18 +21,8 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   align-items: center;  
-  /* justify-content: column; */
   flex-direction: row;
   padding-top: 5em;
-
-
-  /* maybe? */
-
-  /* display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap; */
-
 
 }
 
@@ -54,6 +42,8 @@ main {
 
 
 
+/* media query: when width is less than 800px, format the page for mobile devices. */
+
 @media (max-width: 800px) {
   body {
     display: flex;
@@ -63,21 +53,5 @@ main {
 } 
 
 /*
-@media (min-width: 600px) {
-  .tweet-box {
-    width: 25%;
-  }
-
-  .tweetsContainer {
-    width: 75%;
-  }
-
-} */
-
-
-
-/*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- /* margin-top: 30px; */

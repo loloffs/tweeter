@@ -4,8 +4,9 @@
   justify-content: center;
   align-items: flex-start;
   font-family: 'Bungee', cursive;
-  width: 80%;
+  width: 114%;
   padding: 1em;
+  align-self: center;
 }
 
 .new-tweet button {
@@ -98,40 +99,6 @@
   margin: 1em;
 }
 
-/* .counter {
-  color: black;
-}  */
-
 .counterRed {
   color: red;
 }
-
-
-
-/* @media screen and (max-width: 800px) {
-  .container .new-tweet {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} 
-
-@media (min-width: 600px) {
-  .tweet-box {
-    width: 25%;
-  }
-
-  .tweetsContainer {
-    width: 75%;
-  }
-
-} */
-
-
-
-/* .container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-} */

@@ -50,10 +50,9 @@ $(document).ready(function () {
     const tweetsContainer = $(".tweetsContainer");
     for (const x of tweetExample) {
       let tweetArticle = createTweetElement(x);
-
       tweetsContainer.prepend(tweetArticle);
     }
-  }
+  };
 
 
 
@@ -81,38 +80,26 @@ $(document).ready(function () {
       return;
     }
     
-    console.log(event.target.elements[0].value);
-
-    console.log($(this).serialize());
-
     $.ajax({ 
-      
       url: "/tweets",
       method: 'POST',
-      data: $(this).serialize(), 
-    }).then(() => {
+      data: $(this).serialize(),  
+    }).then(() => { // Load tweets every time a new tweet is created
       loadTweets();
     })
   });
 
   
  const loadTweets = function() {
-
   $.ajax({ 
-
     url: "/tweets",
     method: 'GET',
     success: function(result) {
       renderTweets(result);
-
     }
-  
   })
-
  };
-
  loadTweets();
-
 });
 
 
