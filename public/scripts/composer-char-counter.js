@@ -5,11 +5,12 @@ $(document).ready(function() {
     counter.text(140 - tweetLength);
 
     if (tweetLength > 140) {
-      counter.value() = "test";
+      counter.addClass("counterRed");
+      // counter.removeClass("counter");
+    } else if (tweetLength <= 140){
+      // counter.addClass("counter");
+      counter.removeClass("counterRed");
     }
-
-    console.log(tweetLength);
-    // make counter RED if below 0
   });
 });
 

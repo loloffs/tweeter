@@ -4,6 +4,10 @@
   width: 100%;
   background-color: gray;
 
+
+  align-self: flex-start;
+
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -22,3 +26,9 @@
 }
 
 
+@media (min-width: 800px) {
+  .topHeader {
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+}

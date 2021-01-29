@@ -25,9 +25,6 @@
   text-align: center;
 }
 
-.new-tweet output {
-  color: black;
-}
 
 .new-tweet textarea {
   display: flex;
@@ -94,11 +91,19 @@
 }
 
 .counter {
-  margin: 1em;
+  margin: 5%;
 }
 
 #tweetButton {
   margin: 1em;
+}
+
+/* .counter {
+  color: black;
+}  */
+
+.counterRed {
+  color: red;
 }
 
 

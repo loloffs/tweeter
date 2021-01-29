@@ -24,7 +24,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   align-items: center;  
   /* justify-content: column; */
-  flex-flow: column;
+  flex-direction: row;
   padding-top: 5em;
 
 
@@ -43,13 +43,19 @@ main {
   display: flex;
   width: 90%;
   background-color: #f4f1ec;
+  flex-direction: row;
   align-items: center;
+}
+
+.fullContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 
 
 @media (max-width: 800px) {
-  .body .header {
+  body {
     display: flex;
     flex-direction: column;
     width: 100%;
